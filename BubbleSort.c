@@ -19,7 +19,8 @@ void BubbleSort(u16 *Arr_Ptr, u16 Arr_Len)
         swap++;
       }
     }
-    if (swap==0)  break;
+    if (swap==0)  break; // To avoid repeating if the rest elements of the array is sorted,
+                          //after one loop without any swaping means all is in order
     else swap=0;
   }
 }
